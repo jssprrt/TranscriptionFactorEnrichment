@@ -157,6 +157,4 @@ TF binding site files must be:
 - Named by TF (e.g., `CTCF.rds`)
 
 
-## Author
-
 [Your name here]
