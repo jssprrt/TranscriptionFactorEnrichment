@@ -121,11 +121,11 @@ print(top_tfs)
 ```
 ## Ouput Plots
 <p align="center">
-  <img src="/TranscriptionFactorEnrichment/plots/TF_enrichment_Exp_Bkd_500_top_barplot.pdf" alt="GIGANORM Logo" width="700">
+  <img src="plots/TF_enrichment_Exp_Bkd_500_top_barplot.pdf" alt="barplot" width="700">
 </p>   
 
 <p align="center">
-  <img src="/TranscriptionFactorEnrichment/plots/TF_enrichment_Exp_Bkd_500_volcano_plot.pdf" alt="GIGANORM Logo" width="700">
+  <img src="plots/TF_enrichment_Exp_Bkd_500_volcano_plot.pdf" alt="volcanoPlot" width="700">
 </p>   
 
 ## Console Output
