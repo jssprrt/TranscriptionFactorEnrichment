@@ -15,7 +15,7 @@ library(ggplot2)
 
 ## Usage
 ```r
-source("tf_enrichment_analysis.R")
+source("TranscriptionFactor_Enrichment.R")
 
 exp <- readRDS("path/to/your/ipa_regions.rds")          # Your experimental regions (GRanges)
 bkd <- readRDS("path/to/your/polya_regions.rds")        # Your background regions (GRanges)
