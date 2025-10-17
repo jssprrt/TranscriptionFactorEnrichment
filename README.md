@@ -1,10 +1,10 @@
 # TF Enrichment Analysis
 
-Statistical analysis tool for identifying enriched transcription factor binding sites in genomic regions compared to the background.
+Statistical analysis tool for identifying enriched transcription factor binding sites in genomic regions compared to the background. This function uses the data for binding sites of all the transcription factors from ENCODE.
 
 ## Description
 
-This R script performs transcription factor (TF) enrichment analysis by comparing TF binding site overlap between experimental regions (e.g., IPA sites) and background regions (e.g., PolyA sites). It calculates z-scores, p-values with FDR correction, and generates publication-ready visualizations.
+This R script performs transcription factor (TF) enrichment analysis by comparing TF binding site overlap between experimental regions (e.g., Experiment sites) and background regions (e.g., Background sites). It calculates z-scores, p-values with FDR correction, and generates publication-ready visualizations.
 
 ## Requirements
 ```r
@@ -15,17 +15,14 @@ library(ggplot2)
 
 ## Usage
 ```r
-# Load the functions
 source("tf_enrichment_analysis.R")
 
-# Prepare your data
 exp <- readRDS("path/to/your/ipa_regions.rds")          # Your experimental regions (GRanges)
 bkd <- readRDS("path/to/your/polya_regions.rds")        # Your background regions (GRanges)
 tf_dir <- "path/to/tf_binding_sites/"                   # Directory with TF .rds files
 output_plot <- "output/directory/"                      # Output directory
 threshold_for_TFs_Enrichment <- 500                     # Distance threshold label from center
 
-# Run the analysis
 results <- run_tf_enrichment_analysis(
     ipa_gr = exp,
     polya_gr = bkd,
@@ -100,14 +97,11 @@ library(GenomicRanges)
 library(dplyr)
 library(ggplot2)
 
-# Source functions
 source("tf_enrichment_analysis.R")
 
-# Load your GRanges objects
 exp <- readRDS("data/ipa_sites.rds")
 bkd <- readRDS("data/polya_sites.rds")
 
-# Run analysis with custom threshold
 results <- run_tf_enrichment_analysis(
     ipa_gr = exp,
     polya_gr = bkd,
@@ -119,7 +113,6 @@ results <- run_tf_enrichment_analysis(
     significance_threshold = 0.01
 )
 
-# View top enriched TFs
 top_tfs <- results %>%
     filter(Significant == "Yes") %>%
     arrange(P_value) %>%
