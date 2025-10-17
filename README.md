@@ -119,6 +119,14 @@ top_tfs <- results %>%
     head(10)
 print(top_tfs)
 ```
+## Ouput Plots
+<p align="center">
+  <img src="/TranscriptionFactorEnrichment/plots/TF_enrichment_Exp_Bkd_500_top_barplot.pdf" alt="GIGANORM Logo" width="700">
+</p>   
+
+<p align="center">
+  <img src="/TranscriptionFactorEnrichment/plots/TF_enrichment_Exp_Bkd_500_volcano_plot.pdf" alt="GIGANORM Logo" width="700">
+</p>   
 
 ## Console Output
 
