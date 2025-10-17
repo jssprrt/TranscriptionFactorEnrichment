@@ -1,10 +1,6 @@
 # TF Enrichment Analysis
 
-Statistical analysis tool for identifying enriched transcription factor binding sites in genomic regions compared to the background. This function uses the data for binding sites of all the transcription factors from ENCODE.
-
-## Description
-
-This R script performs transcription factor (TF) enrichment analysis by comparing TF binding site overlap between experimental regions (e.g., Experiment sites) and background regions (e.g., Background sites). It calculates z-scores, p-values with FDR correction, and generates publication-ready visualizations.
+Binomial Z-scoring method for identifying enriched transcription factor binding sites in genomic regions compared to the background. The transcription factor (TF) data were obtained from ENCODE ChIP-seq experiments. Replicates for each TF were merged across multiple ENCODE sources to create a single comprehensive list of TFs. The GRanges objects for each TF are stored in two directories, TranscriptionFactors and TranscriptionFactors1, split due to GitHub’s 1000-file limit per directory. This R script performs TF enrichment analysis by comparing TF binding site overlap between experimental regions (e.g., Experiment sites) and background regions (e.g., Background sites). It calculates z-scores, p-values with FDR correction, and generates publication-ready visualizations.
 
 ## Requirements
 ```r
