@@ -120,12 +120,12 @@ top_tfs <- results %>%
 print(top_tfs)
 ```
 ## Ouput Plots
-<p align="center">
-  <img src="plots/TF_enrichment_Exp_Bkd_500_top_barplot.png" alt="barplot" width="700">
+<p align="left">
+  <img src="plots/TF_enrichment_Exp_Bkd_500_top_barplot.jpg" alt="barplot" width="700">
 </p>   
 
-<p align="center">
-  <img src="plots/TF_enrichment_Exp_Bkd_500_volcano_plot.pdf" alt="volcanoPlot" width="700">
+<p align="right">
+  <img src="plots/TF_enrichment_Exp_Bkd_500_volcano_plot.jpg" alt="volcanoPlot" width="700">
 </p>   
 
 ## Console Output
