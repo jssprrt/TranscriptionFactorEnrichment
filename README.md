@@ -155,6 +155,3 @@ TF binding site files must be:
 - Saved as `.rds` format
 - Contain valid GRanges objects
 - Named by TF (e.g., `CTCF.rds`)
-
-
-[Your name here]
